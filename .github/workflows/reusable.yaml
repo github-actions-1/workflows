@@ -21,9 +21,9 @@ jobs:
   log-context-and-inputs:
     runs-on: ubuntu-latest
     steps:
-      - name: Desplay Github Contexts
-        run: echo ${{ toJson(github) }}
+      - name: Display Github Contexts
+        run: echo '${{ toJson(github) }}''
       - name: Display name input
         run: echo ${{ inputs.name }}
       - name: Display access-token secret
-        run: echo $ {{ secrets.access-token }}
+        run: echo ${{ secrets.access-token }}
