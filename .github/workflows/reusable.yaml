@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Github Contexts
-        run: echo '${{ toJson(github) }}''
+        run: echo '${{ toJson(github) }}'
       - name: Display name input
         run: echo ${{ inputs.name }}
       - name: Display access-token secret
